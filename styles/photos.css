@@ -24,3 +24,47 @@
 }
 
 /* Your code here */
+
+@media print, screen and (min-width:600px) and (max-width: 900px) {
+
+    .photo-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      page-break-inside: avoid;
+    }
+
+    .photo-card .content {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width:901px) and (max-width: 1200px) {
+
+    .photo-card {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 49%;
+        margin: 0;
+        vertical-align: top;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .photo-card {
+        vertical-align: top;
+        display: inline-block;
+        width: 40%;
+        margin: 0;
+        text-align: left;
+        height: auto;
+      }
+
+      .photo-card .content {
+          display: flex;
+          flex-direction: row;
+          gap: 15px;
+      }
+}

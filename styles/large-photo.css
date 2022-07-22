@@ -19,3 +19,38 @@ a.backButton {
 }
 
 /* Your code here */
+
+@media print {
+
+    body {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    h1 {
+        position: absolute;
+        color: #E8EFF0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+
+    p {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .notPrinted {
+        display: none;
+    }
+
+}
